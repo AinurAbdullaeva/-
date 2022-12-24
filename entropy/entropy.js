@@ -1,5 +1,5 @@
 let fs = require ("fs");
-let str = fs.readFileSync("test.txt");
+let str = fs.readFileSync("test2.txt");
 str = str.toString();
 
 let alph = new Array();
