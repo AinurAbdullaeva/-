@@ -90,12 +90,13 @@ while (ind<=n-m+1){
 		if (pos==0) answer.push(ind);
     }
 	//console.log(l);
-	let symb=0;
+	let entry=0;
 	if (l!=m){
 		for (j in N){
-			if (j==S[ind+pos]) symb=j;
+			if (j==S[ind+pos]) entry=N[j];
+			else entry =0;
 		}
-		Shift1=Math.max(m-N[symb]-l,1);
+		Shift1=Math.max(m-entry-l,1);
 	}
 	else Shift1=1;
 	console.log(Shift1, ' ', Shift2[l],' ',l,' ', pos, ' ', ind);
